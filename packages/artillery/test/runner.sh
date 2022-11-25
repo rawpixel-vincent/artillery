@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 echo "# starting target"
-# &>/dev/null PORT=3003 node ./test/core/targets/simple.js &
-target_pid=$!
 &>/dev/null node ./test/gh_215_target.js &
+target_pid=$!
+&>/dev/null node ./test/socketio_wildcard_target.js &
 target2_pid=$!
 
 echo "# running tests"

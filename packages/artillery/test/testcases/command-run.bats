@@ -141,3 +141,8 @@
     [[ $? -eq 1 ]]
     set -e
 }
+
+@test "Wildcard is handled properly in socketio" {
+    ./bin/run run ./test/scripts/wildcard_socketio.json 2>&1 | grep -q -m1 "Wildcard"
+    [[ $? -eq 0 ]]
+}
