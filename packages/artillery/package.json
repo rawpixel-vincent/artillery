@@ -94,7 +94,7 @@
     "artillery-plugin-ensure": "^1.1.1",
     "artillery-plugin-expect": "^2.1.0",
     "artillery-plugin-metrics-by-endpoint": "^1.0.2",
-    "artillery-plugin-publish-metrics": "^2.0.2",
+    "artillery-plugin-publish-metrics": "git+https://github.com/rawpixel-vincent/artillery-plugin-publish-metrics.git#master",
     "async": "^2.6.4",
     "aws-sdk": "^2.1172.0",
     "chalk": "^2.4.2",
